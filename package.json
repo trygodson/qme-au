@@ -1,0 +1,71 @@
+{
+  "name": "one-medy",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@microsoft/signalr": "^5.0.8",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "emotion": "^11.0.0",
+    "flutterwave-react-v3": "^1.1.0",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-animations": "^1.0.0",
+    "react-bootstrap-icons": "^1.6.1",
+    "react-burger-menu": "^3.0.6",
+    "react-datepicker": "^4.4.0",
+    "react-dom": "^17.0.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-loading-overlay": "^1.0.1",
+    "react-otp-input": "^2.4.0",
+    "react-paginate": "^8.0.1",
+    "react-paystack": "^3.0.5",
+    "react-query": "3.18",
+    "react-rating": "^2.0.5",
+    "react-reveal": "^1.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-select": "^5.2.1",
+    "react-simple-dropdown": "^3.2.3",
+    "styled-components": "^5.3.3",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.2.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3 || ^17"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

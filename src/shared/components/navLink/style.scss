@@ -1,0 +1,16 @@
+.nav-link-wrapper {
+  position: relative;
+  overflow: hidden;
+  .active-line {
+    height: 1px;
+    background-color: red;
+    width: 50%;
+    margin-left: -50%;
+    transition: margin-left 0.5s ease-in-out;
+  }
+  &:hover {
+    .active-line {
+      margin-left: 25%;
+    }
+  }
+}

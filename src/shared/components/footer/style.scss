@@ -1,0 +1,58 @@
+@import '../../../EntryFile/sassVariables/screenSizes';
+footer {
+  background-color: #32239a;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer-wrapper {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .row {
+      img {
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    .footer-end {
+      // display: flex;
+      // justify-content: space-between;
+      font-size: 18px;
+      font-weight: 500;
+      .lhs {
+        display: flex;
+        justify-content: space-between;
+      }
+      .rhs {
+        text-align: end;
+      }
+    }
+    @media (max-width: $lg) {
+      .footer-end {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    .footer-wrapper {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: $lg) {
+  footer {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

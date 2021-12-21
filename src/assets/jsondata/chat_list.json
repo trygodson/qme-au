@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "user_id": 61,
+        "name": "John Doe",
+        "image": "http://localhost:3000/male.jpg",
+        "last_message": "Working with like a dream",
+        "online": true,
+        "unread_messages": 5,
+        "time": "09:00"
+    },
+    {
+        "id": "2",
+        "user_id": 62,
+        "name": "Mary Doe",
+        "image": "http://localhost:3000/male.jpg",
+        "last_message": "We have two friends...",
+        "online": true,
+        "unread_messages": 2,
+        "time": "10:00"
+    },
+    {
+        "id": "3",
+        "user_id": 63,
+        "name": "Emmanuel Jay",
+        "image": "http://localhost:3000/male.jpg",
+        "last_message": "What is the meaning?",
+        "online": false,
+        "unread_messages": 1,
+        "time": "11:00"
+    },
+    {
+        "id": "4",
+        "user_id": 64,
+        "name": "Paul Walker",
+        "image": "http://localhost:3000/male.jpg",
+        "last_message": "Life is so good",
+        "online": true,
+        "unread_messages": 0,
+        "time": "12:00"
+    },
+    {
+        "id": "5",
+        "user_id": 65,
+        "name": "Moses Klaus",
+        "image": "http://localhost:3000/male.jpg",
+        "last_message": "Working with like a dream",
+        "online": false,
+        "unread_messages": 0,
+        "time": "15:00"
+    }
+]

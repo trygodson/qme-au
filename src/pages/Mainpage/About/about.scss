@@ -1,0 +1,147 @@
+@import '../../../EntryFile/sassVariables/colors';
+@import '../../../EntryFile/sassVariables/screenSizes';
+.top-banner {
+  margin-top: 100px;
+  height: 200px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  background-image: url('/assets/images/about-top.png');
+}
+section.who-we-are {
+  display: flex;
+  align-items: center;
+  .who-we {
+    .inner {
+      height: 100%;
+      h3 {
+        font-weight: 700;
+      }
+    }
+    .video-image {
+      height: 100%;
+    }
+    margin: auto auto;
+  }
+}
+section.what-we-do {
+  display: flex;
+  align-items: center;
+  .container {
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 0;
+      .top-what-we-do {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          font-weight: 700;
+          font-size: 32px;
+        }
+        div {
+          height: 3px;
+          background-color: $primary_blue;
+          width: 70px;
+        }
+      }
+    }
+    .row {
+      .do {
+        box-shadow: 0 0 7px #cccccc;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 20px;
+        border-radius: 5px;
+
+        .item {
+          text-align: center;
+          width: 45%;
+          background-color: chocolate;
+          opacity: 0.6;
+          border-radius: 5px;
+          padding: 20px;
+          transition: opacity 0.3s ease-in-out;
+          .name {
+            color: white;
+          }
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+        .item.two {
+          background-color: rgb(24, 202, 33);
+        }
+        .item.three {
+          background-color: rgb(202, 24, 193);
+        }
+        .item.four {
+          background-color: rgb(24, 202, 193);
+        }
+        .item.five {
+          background-color: rgb(202, 199, 24);
+        }
+        .item.six {
+          background-color: rgb(24, 101, 202);
+        }
+      }
+      .rhs {
+        display: flex;
+        align-items: center;
+        div {
+          p.gf {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+            padding: 25px 0;
+          }
+          @media (max-width: $lg) {
+            p.gf {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.our-vision {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  .container {
+    .our-vision {
+      .top {
+        display: inline-block;
+        h3 {
+          font-weight: bold;
+        }
+        div {
+          height: 3px;
+          width: 50px;
+          background: $primary_pink;
+        }
+      }
+      .text {
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: $lg) {
+  section.our-vision {
+    text-align: center;
+  }
+}
+section.our-vision.mission {
+  background-color: white;
+}

@@ -1,0 +1,58 @@
+@import '../../../EntryFile/sassVariables/_colors';
+@import '../../../EntryFile/sassVariables/_screenSizes';
+
+div.doctor-list-wrapper {
+  width: 100vw;
+  // height: 100vh;
+  .doctors-list-inner-wrapper {
+    padding-top: 18vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    .sort-list-wrapper {
+      .sort-list {
+        select {
+          border: none;
+          outline: none;
+          width: 55px;
+          width: 100%;
+        }
+      }
+      @media (max-width: $lg) {
+        .sort-list {
+          padding: 40px;
+        }
+      }
+    }
+    .search-form-wrapper {
+      width: 100%;
+      .form-wrap {
+        display: flex;
+        width: 100%;
+        .input-wrapper {
+          width: inherit;
+          border-bottom: 1px solid black;
+          margin-right: 30px;
+          padding-left: 15px;
+          input {
+            border: none;
+            outline: none;
+            width: 60%;
+          }
+        }
+        .button {
+          outline: none;
+          border-radius: 5px;
+          border: none;
+          padding: 5px 15px;
+          color: white;
+          background-color: $primary_blue;
+        }
+      }
+    }
+  }
+  @media (max-width: $lg) {
+    .doctors-list-inner-wrapper {
+      padding-top: 14vh;
+    }
+  }
+}

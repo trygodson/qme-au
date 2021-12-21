@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import './EntryFile/sassVariables/_colors';
+@import './EntryFile/sassVariables/_screenSizes';
+
+// body {
+//   box-sizing: border-box;
+// }
+.otp-wrap {
+  overflow: hidden;
+  text-align: center;
+}
+
+.otp-wrap div:first-child {
+  justify-content: center;
+}
+
+.otp-input-style {
+  width: 4.5rem !important;
+  height: 4.5rem;
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
