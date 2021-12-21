@@ -216,9 +216,9 @@ const LandingPage = () => {
               <div className="underline"></div>
               <h4>Live Consultation</h4>
               <p>
-                Consult doctors online with our seamless Live Chat feature! E-Care allows you to get
-                in touch with a doctor online with our online chat feature. This way you can easily
-                get medical attention or advice on the hurry.
+                Consult doctors online with our seamless Live Chat feature! Q Medic allows you to
+                get in touch with a doctor online with our online chat feature. This way you can
+                easily get medical attention or advice on the hurry.
               </p>
               <Link to="/doctors" className="consult-button">
                 consult a doctor now
