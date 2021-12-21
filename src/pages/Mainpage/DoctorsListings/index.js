@@ -94,7 +94,6 @@ const DoctorsListing = () => {
   useEffect(() => {
     async function specData() {
       const res = await axios.get(`${BASE_URL}doctorsearch?specialization_id=${specializationId}`);
-      console.log(res);
       setAllSpecializationData(res.data);
     }
 

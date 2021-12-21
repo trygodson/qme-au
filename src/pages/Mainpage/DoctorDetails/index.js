@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import { Envelope, Telephone, CameraVideo, ChatFill, Chat } from 'react-bootstrap-icons';
 import './index.scss';
 import ChatBox from '../../../shared/components/chat/ChatBox';
@@ -25,6 +25,7 @@ const DoctorDetails = () => {
   const [doctorDetail, setDoctorDetail] = useState(null);
   const { user: _user } = useAuthState();
   const { state } = useLocation();
+  const { push } = useHistory();
   const bounceAnimation = keyframes`${mobileChat ? bounceInRight : ''}`;
   const _style = styled.div`
     animation: 1s ${bounceAnimation};
@@ -48,6 +49,13 @@ const DoctorDetails = () => {
     setUserId(null);
     setChat(false);
   };
+  const bookOnline = () => {
+    if (_user.user == null) {
+      push('/login');
+    } else {
+      setBookModal(!bookModal);
+    }
+  };
   return (
     <LoadingOverlay active={isLoading} spinner text="Creating Appointment">
       <>
@@ -70,7 +78,7 @@ const DoctorDetails = () => {
                       <button className="b1 btn btn-primary">
                         <Envelope style={{ marginRight: '2px', marginTop: '-3px' }} /> Ask A Query
                       </button>
-                      <button className="b2 btn" onClick={() => setBookModal(!bookModal)}>
+                      <button className="b2 btn" onClick={() => bookOnline()}>
                         <Telephone style={{ marginRight: '2px', marginTop: '-3px' }} /> Book Online
                       </button>
                       {/* <button className="b2 btn">

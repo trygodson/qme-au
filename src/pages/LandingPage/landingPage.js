@@ -55,7 +55,6 @@ const LandingPage = () => {
     );
   };
   const selectDoctor = i => {
-    console.log(i);
     push(`/doctors/${i.id}`);
   };
 
