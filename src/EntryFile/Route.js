@@ -1,13 +1,18 @@
-import { lazy } from 'react';
-// import LandingPage from '../pages/LandingPage/landingPage';
-
-const LandingPage = lazy(() => import('../pages/LandingPage/landingPage'));
-const LoginPage = lazy(() => import('../pages/Auth/Login'));
-const Register = lazy(() => import('../pages/Auth/Register'));
-const DoctorsListings = lazy(() => import('../pages/Mainpage/DoctorsListings'));
-const DoctorsDetails = lazy(() => import('../pages/Mainpage/DoctorDetails'));
-const Otp = lazy(() => import('../pages/Auth/VerifyOtp'));
-const About = lazy(() => import('../pages/Mainpage/About'));
+// import { lazy } from 'react';
+import LandingPage from '../pages/LandingPage/landingPage';
+import LoginPage from '../pages/Auth/Login';
+import Register from '../pages/Auth/Register';
+import DoctorsListings from '../pages/Mainpage/DoctorsListings';
+import DoctorsDetails from '../pages/Mainpage/DoctorDetails';
+import Otp from '../pages/Auth/VerifyOtp';
+import About from '../pages/Mainpage/About';
+// const LandingPage = lazy(() => import('../pages/LandingPage/landingPage'));
+// const LoginPage = lazy(() => import('../pages/Auth/Login'));
+// const Register = lazy(() => import('../pages/Auth/Register'));
+// const DoctorsListings = lazy(() => import('../pages/Mainpage/DoctorsListings'));
+// const DoctorsDetails = lazy(() => import('../pages/Mainpage/DoctorDetails'));
+// const Otp = lazy(() => import('../pages/Auth/VerifyOtp'));
+// const About = lazy(() => import('../pages/Mainpage/About'));
 
 export const routes = [
   {
