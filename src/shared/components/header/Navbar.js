@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const { user } = useAuthState();
   const redirectToDashboard = id => {
-    window.location.href = `http://localhost:3000/${id}`;
+    window.location.href = `https://qmedic-dash.netlify.app/${id}`;
   };
   return (
     <>
