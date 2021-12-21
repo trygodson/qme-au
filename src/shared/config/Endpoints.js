@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:8000/api/v1/';
+const BASE_URL = 'http://shop.scnip.net/api/v1/';
+// const BASE_URL = 'http://localhost:8000/api/v1/';
 
 const ApiEndpoints = {
   // Users
