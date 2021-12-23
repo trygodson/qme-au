@@ -56,6 +56,7 @@ const DoctorDetails = () => {
       setBookModal(!bookModal);
     }
   };
+  console.log(_user.user.id);
   return (
     <LoadingOverlay active={isLoading} spinner text="Creating Appointment">
       <>

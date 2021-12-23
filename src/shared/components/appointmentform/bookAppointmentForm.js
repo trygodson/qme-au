@@ -53,7 +53,7 @@ function BookAppointmentForm(props) {
   const handleFlutterPayment = useFlutterwave(newFlutterConfig);
   const handlePaystackPayment = usePaystackPayment(newPaystackConfig);
   let note = {};
-  async function handlePayment(values, { resetForm }) {
+  async function handlePayment(values) {
     // console.log(moment(values.appointmentDate).format());
     const data = {
       starts_at: `${moment(values.appointmentDate).format('yyyy-MM-DD')} ${moment(

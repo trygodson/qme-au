@@ -41,6 +41,7 @@ const Login = props => {
 
     try {
       const response = await loginUser(payload);
+      console.log(response);
       if (response.user.isVerified == true) {
         dispatch(
           AuthActionSuccess({

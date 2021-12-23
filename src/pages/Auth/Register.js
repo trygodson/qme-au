@@ -11,6 +11,7 @@ import './Auth.scss';
 import { useAuthState } from '../../context/useAuthContext';
 import useAuthService from '../../shared/hooks/api/useAuthService';
 import { setFormikErrors } from '../../utils/errorfield';
+import Swal from 'sweetalert2';
 
 const cityOptions = [
   { value: 'abuja', label: 'Abuja' },
@@ -111,9 +112,15 @@ const Register = ({ ...props }) => {
 
     try {
       const response = await registerUser(payload);
-
+      console.log('resgister' + response);
+      Swal.fire({
+        title: 'Please Login To Complete Registeration',
+        text: 'Login Successful',
+        icon: 'success',
+        confirmButtonText: 'Cool',
+      });
       props.history.push({
-        pathname: '/verify-otp',
+        pathname: '/login',
         // state: { email: response.email },
         state: { email: response.email, id: response.id },
       });
